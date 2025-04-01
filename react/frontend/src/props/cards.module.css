@@ -1,0 +1,13 @@
+.main{
+    width: 200px;
+    height: 400px;
+    margin: auto;
+    border: 2px solid green;
+    border-radius: 7px;
+
+}
+
+.image{
+    width: 100%;
+}
+

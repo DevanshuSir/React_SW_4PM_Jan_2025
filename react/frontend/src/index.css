@@ -1,0 +1,16 @@
+body{
+  background-color: brown;
+  color: white;
+}
+
+.heading{
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+.p1{
+  background-color: green;
+  font-size: 30px;
+  text-align: center;
+}
