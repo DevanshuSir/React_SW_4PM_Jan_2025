@@ -1,7 +1,8 @@
-import Counter from "./comp/Counter";
-import Form from "./comp/Form";
-import LearnUse from "./comp/LearnUse";
-import UseState from "./comp/UseState";
+// import Counter from "./comp/Counter";
+// import Form from "./comp/Form";
+// import LearnUse from "./comp/LearnUse";
+// import UseState from "./comp/UseState";
+import Todo from "./todo/Todo";
 
 function App() {
   // let firstName = "Devanshu";
@@ -54,7 +55,8 @@ function App() {
       {/* <UseState /> */}
       {/* <Counter /> */}
       {/* <LearnUse /> */}
-      <Form />
+      {/* <Form /> */}
+      <Todo />
     </>
   );
 }
