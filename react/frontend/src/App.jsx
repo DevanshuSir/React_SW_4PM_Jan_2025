@@ -2,6 +2,8 @@
 // import Form from "./comp/Form";
 // import LearnUse from "./comp/LearnUse";
 // import UseState from "./comp/UseState";
+// import { useEffect, useState } from "react";
+// import Effect from "./comp/Effect";
 import Todo from "./todo/Todo";
 
 function App() {
@@ -44,6 +46,13 @@ function App() {
   //   },
   // ];
 
+  // const [count, setCount] = useState(0);
+  // const [value, setValue] = useState("Devanshu");
+
+  // useEffect(() => {
+  //   console.log("Comp Render");
+  // }, [value]);
+
   return (
     <>
       {/* <Cards name={userName_2} />
@@ -57,6 +66,25 @@ function App() {
       {/* <LearnUse /> */}
       {/* <Form /> */}
       <Todo />
+
+      {/* <Effect></Effect> */}
+
+      {/* <h1>Count :- {count}</h1>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        +
+      </button>
+      <h2>{value}</h2>
+      <button
+        onClick={() => {
+          setValue("Aman");
+        }}
+      >
+        Update
+      </button> */}
     </>
   );
 }

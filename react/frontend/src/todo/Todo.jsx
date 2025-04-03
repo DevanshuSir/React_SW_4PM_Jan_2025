@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TodoCss from "./todo.module.css";
 import { toast } from "react-hot-toast";
+import Task from "./Task";
 
 function Todo() {
   const [task, setTask] = useState("Dev");
+  const [totalTask, setTotalTask] = useState(0);
+  const [completeTask, setCompleteTask] = useState(0);
 
   function handleForm(e) {
     e.preventDefault();
@@ -41,10 +44,42 @@ function Todo() {
     setTodo_task(deletedValues);
   }
 
+  function handleUpdate(id) {
+    const copyUpdateArray = [...todo_task];
+    const oldValue = copyUpdateArray[id].Task;
+
+    const newValue = prompt(`Update Task :- ${oldValue} `, oldValue);
+
+    if (newValue) {
+      const newObj = { Task: newValue, complete: false };
+
+      copyUpdateArray.splice(id, 1, newObj);
+
+      setTodo_task(copyUpdateArray);
+    }
+  }
+
+  useEffect(() => {
+    const copyOfArray = [...todo_task];
+
+    const TotalTasks = copyOfArray.filter((value, index) => {
+      return value;
+    });
+
+    setTotalTask(TotalTasks.length);
+
+    const completeTasks = copyOfArray.filter((value, index) => {
+      return value.complete;
+    });
+
+    setCompleteTask(completeTasks.length);
+  }, [todo_task]);
+
   return (
     <>
       <div className={TodoCss.main}>
         <h1 className={TodoCss.heading}>My Todo Application 😍</h1>
+        <Task Ctask={completeTask} Ttask={totalTask} />
         <div>
           <form onSubmit={handleForm}>
             <input
@@ -86,7 +121,12 @@ function Todo() {
                       handleDelete(index);
                     }}
                   ></i>
-                  <i class="bi bi-pencil-square float-end text-success me-3 "></i>
+                  <i
+                    class="bi bi-pencil-square float-end text-success me-3 "
+                    onClick={() => {
+                      handleUpdate(index);
+                    }}
+                  ></i>
                 </li>
               </>
             ))}
