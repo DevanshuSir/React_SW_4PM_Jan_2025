@@ -10,6 +10,7 @@
 }
 
 .heading {
+  margin-bottom: 20px;
 	-webkit-animation: heading 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 	        animation: heading 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
 }
@@ -22,10 +23,12 @@
             background-color: black;
             color: white;
             font-weight: bold;
-            margin-left: 5px;
-            padding: 2px 10px 2px 10px;
+            margin-left: 15px;
+            padding: 2px 20px 2px 20px;
+            border: solid green 2px;
             border-bottom-left-radius: 10px;
             border-top-right-radius: 10px;
+           
 }
 
 .btn_vibrate:hover{
@@ -35,20 +38,26 @@
 
 
 .input_Box{
-    border: solid red 2px;
+    border: solid green 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     outline: none;
     background-color: black;
     color: white;
-    padding: 2px 10px 2px 10px;
+    padding: 2px 20px 2px 20px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
+   
 }
+
+
 
 .list_items{
     color: white;
     margin-top: 20px;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
 }
-
 
 
 
