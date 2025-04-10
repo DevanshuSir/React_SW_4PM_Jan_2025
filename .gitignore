@@ -1,0 +1,11 @@
+/react/frontend/node_modules
+/react/frontend/package-lock.json
+
+/tailwind/node_modules
+/tailwind/package-lock.json
+
+/todo/node_modules
+/todo/package-lock.json
+
+/weather_app/node_modules
+/weather_app/package-lock.json

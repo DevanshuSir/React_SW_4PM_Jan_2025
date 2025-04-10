@@ -1,7 +1,6 @@
 import TaskCss from "./todo.module.css";
 
 function Task(props) {
-  console.log(props);
   return (
     <>
       <section className={TaskCss.task_container}>

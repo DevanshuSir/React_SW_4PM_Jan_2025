@@ -4,7 +4,16 @@
 // import UseState from "./comp/UseState";
 // import { useEffect, useState } from "react";
 // import Effect from "./comp/Effect";
-import Todo from "./todo/Todo";
+// import Todo from "./todo/Todo";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./Website/Homepage";
+import About from "./Website/About";
+import Navbar from "./Website/Navbar";
+import Footer from "./Website/Footer";
+import Contact from "./Website/Contact";
+import Data from "./Website/Data";
+import SinglePage from "./Website/SinglePage";
+import Tailwind from "./Tailwind/Tailwind";
 
 function App() {
   // let firstName = "Devanshu";
@@ -55,6 +64,19 @@ function App() {
 
   return (
     <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact/:someValue" element={<Contact />} />
+          <Route path="/data" element={<Data />} />
+          <Route path="/single/:id" element={<SinglePage />} />
+          <Route path="/tailwind" element={<Tailwind />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
       {/* <Cards name={userName_2} />
       <Cards name={userName_1} />
       <Cards name={userName_3} /> */}
@@ -65,7 +87,7 @@ function App() {
       {/* <Counter /> */}
       {/* <LearnUse /> */}
       {/* <Form /> */}
-      <Todo />
+      {/* <Todo /> */}
 
       {/* <Effect></Effect> */}
 
