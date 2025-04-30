@@ -1,5 +1,20 @@
+/app/frontend/node_modules
+/app/frontend/package-lock.json
+
+/app/backend/node_modules
+/app/backend/package-lock.json
+
+/expressjs/node_modules
+/expressjs/package-lock.json
+
 /react/frontend/node_modules
 /react/frontend/package-lock.json
+
+/redux/learn-redux/node_modules
+/redux/learn-redux/package-lock.json
+
+/server/node_modules
+/server/package-lock.json
 
 /tailwind/node_modules
 /tailwind/package-lock.json

@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    color: green;
+}
+p{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
