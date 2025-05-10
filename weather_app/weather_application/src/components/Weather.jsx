@@ -41,7 +41,7 @@ const Weather = () => {
             onKeyDown={(e) => e.key === "Enter" && handleData()}
           />
           <button
-            className="bg-white text-indigo-600 font-semibold py-2 rounded-xl hover:bg-indigo-100 
+            className="bg-white text-indigo-600 font-semibold py-2 rounded-xl hover:bg-indigo-100 hover:scale-105 hover:shadow-md
           "
             onClick={handleData}
           >
